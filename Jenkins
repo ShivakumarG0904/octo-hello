@@ -1,1 +1,12 @@
+pipeline {
+    agent any
 
+    stages {
+        stage('building system details') {
+            steps {
+                echo "systemdeatis first stage"
+                uname -a
+            }
+        }
+    }
+}
